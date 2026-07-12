@@ -1,0 +1,29 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import { AuthProvider } from "@/contexts/AuthContext";
+import { CartProvider } from "@/contexts/CartContext";
+import { WishlistProvider } from "@/contexts/WishlistContext";
+
+export const metadata: Metadata = {
+  title: "NEXUS.io — Next-Gen Tech That Elevates You",
+  description:
+    "Discover premium electronics curated for creators, gamers, and innovators.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body style={{ background: "#090A12", minHeight: "100vh" }}>
+        <AuthProvider>
+          <CartProvider>
+            <WishlistProvider>{children}</WishlistProvider>
+          </CartProvider>
+        </AuthProvider>
+      </body>
+    </html>
+  );
+}

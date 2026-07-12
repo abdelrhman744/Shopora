@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #090a12;
+  --surface: #11131b;
+  --card: #1a1c27;
+  --muted: #8d93a5;
+  --text: #c9cbd6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--background);
+  color: #ffffff;
+  font-family: 'Manrope', 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2d3e;
+  border-radius: 8px;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
