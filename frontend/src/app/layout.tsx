@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: "SHOPORA",
   description:
     "Discover premium electronics curated for creators, gamers, and innovators.",
+
+    icons: {
+    icon: "/logo.png",     
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

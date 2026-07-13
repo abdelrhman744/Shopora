@@ -10,6 +10,7 @@ import { GRADIENT_BTN } from "@/lib/theme";
 import { useCart } from "@/contexts/CartContext";
 import { useWishlist } from "@/contexts/WishlistContext";
 import { useAuth } from "@/contexts/AuthContext";
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,12 +41,18 @@ export default function Navbar() {
       style={{ background: "rgba(9,10,18,0.85)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}
     >
       <Link href="/" className="flex items-center gap-2">
-        <div className="w-8 h-8 rounded-xl flex items-center justify-center" style={{ background: GRADIENT_BTN }}>
-          <Zap size={16} className="text-white" />
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center">
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={150}
+            height={50}
+            priority
+          />
         </div>
         <span className="text-lg font-black text-white tracking-tight">
-          SHOPORA
-          <GradientText>.io</GradientText>
+          SHOP
+          <GradientText>ORA</GradientText>
         </span>
       </Link>
       <div className="hidden md:flex items-center gap-8">

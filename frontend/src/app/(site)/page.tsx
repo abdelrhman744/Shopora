@@ -93,9 +93,7 @@ export default function HomePage() {
                   <span className="flex items-center gap-2">Shop Now <ArrowRight size={16} /></span>
                 </GradientBtn>
               </Link>
-              <button className="px-8 py-4 rounded-2xl text-base font-semibold text-white flex items-center gap-2 transition-all hover:bg-white/10" style={{ border: "1px solid rgba(255,255,255,0.12)" }}>
-                <Play size={16} /> Watch Demo
-              </button>
+              
             </div>
             <div className="flex gap-8 pt-4">
               {[["50K+", "Happy Customers"], ["200+", "Premium Brands"], ["4.9★", "Average Rating"]].map(([val, label]) => (

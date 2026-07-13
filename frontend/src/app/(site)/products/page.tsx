@@ -102,14 +102,7 @@ function ProductsContent() {
                   className="w-full accent-orange-500"
                 />
               </div>
-              <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "1rem" }}>
-                <p className="text-xs font-semibold text-[#8D93A5] uppercase tracking-wider mb-3">Rating</p>
-                {[5, 4, 3].map((r) => (
-                  <button key={r} className="flex items-center gap-2 w-full py-1.5 text-sm text-[#C9CBD6] hover:text-white transition-colors">
-                    <StarRating rating={r} /> &amp; up
-                  </button>
-                ))}
-              </div>
+              
             </div>
           </div>
         </aside>

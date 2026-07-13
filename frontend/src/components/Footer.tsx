@@ -2,11 +2,11 @@ import Link from "next/link";
 import { Zap } from "lucide-react";
 import GradientText from "./GradientText";
 import { GRADIENT_BTN } from "@/lib/theme";
+import Image from "next/image";
 
 const FOOTER_COLUMNS = [
-  { title: "Shop", links: ["All Products", "New Arrivals", "Best Sellers", "Sale"] },
-  { title: "Support", links: ["Help Center", "Track Order", "Returns", "Warranty"] },
-  { title: "Company", links: ["About Us", "Careers", "Press", "Contact"] },
+  { title: "Shop", links: ["All Products", "New Arrivals"] },
+  { title: "Company", links: ["About Us","Contact"] },
 ];
 
 export default function Footer() {
@@ -19,12 +19,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-xl flex items-center justify-center" style={{ background: GRADIENT_BTN }}>
-                <Zap size={16} className="text-white" />
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center">
+                <Image
+                  src="/logo.png"
+                  alt="Logo"
+                  width={150}
+                  height={50}
+                  priority
+                />
               </div>
               <span className="text-lg font-black text-white">
-                SHOPORA
-                <GradientText>.io</GradientText>
+                SHOP
+                <GradientText>ORA</GradientText>
               </span>
             </div>
             <p className="text-sm text-[#8D93A5] leading-relaxed">
