@@ -45,7 +45,7 @@ export default function AdminLoginPage() {
           <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: GRADIENT_BTN }}>
             <ShieldCheck size={18} className="text-white" />
           </div>
-          <span className="text-xl font-black text-white">NEXUS<GradientText>.io</GradientText> Admin</span>
+          <span className="text-xl font-black text-white">SHOPORA<GradientText>.io</GradientText> Admin</span>
         </Link>
         <div className="p-8 rounded-3xl" style={{ background: "#1A1C27", border: "1px solid rgba(255,255,255,0.06)" }}>
           <h1 className="text-2xl font-black text-white mb-1">Admin Sign In</h1>
@@ -60,7 +60,7 @@ export default function AdminLoginPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@nexus.io"
+                  placeholder="admin@shopora.io"
                   className="w-full pl-10 pr-4 py-3 rounded-xl text-sm text-white placeholder-[#8D93A5] outline-none focus:ring-1 focus:ring-purple-500"
                   style={{ background: "#11131B", border: "1px solid rgba(255,255,255,0.08)" }}
                 />

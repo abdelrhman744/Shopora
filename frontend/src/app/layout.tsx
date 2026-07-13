@@ -5,7 +5,7 @@ import { CartProvider } from "@/contexts/CartContext";
 import { WishlistProvider } from "@/contexts/WishlistContext";
 
 export const metadata: Metadata = {
-  title: "NEXUS.io — Next-Gen Tech That Elevates You",
+  title: "SHOPORA",
   description:
     "Discover premium electronics curated for creators, gamers, and innovators.",
 };

@@ -19,19 +19,19 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem("nexus_cart");
+    const stored = localStorage.getItem("shopora_cart");
     if (stored) {
       try {
         setCart(JSON.parse(stored));
       } catch {
-        localStorage.removeItem("nexus_cart");
+        localStorage.removeItem("shopora_cart");
       }
     }
     setHydrated(true);
   }, []);
 
   useEffect(() => {
-    if (hydrated) localStorage.setItem("nexus_cart", JSON.stringify(cart));
+    if (hydrated) localStorage.setItem("shopora_cart", JSON.stringify(cart));
   }, [cart, hydrated]);
 
   const addToCart = (product: Product, qty: number = 1) => {

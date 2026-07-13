@@ -47,7 +47,7 @@ export default function RegisterPage() {
           <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: GRADIENT_BTN }}>
             <Zap size={18} className="text-white" />
           </div>
-          <span className="text-xl font-black text-white">NEXUS<GradientText>.io</GradientText></span>
+          <span className="text-xl font-black text-white">SHOPORA<GradientText>.io</GradientText></span>
         </Link>
         <div className="p-8 rounded-3xl" style={{ background: "#1A1C27", border: "1px solid rgba(255,255,255,0.06)" }}>
           <h1 className="text-2xl font-black text-white mb-1">Create an account</h1>

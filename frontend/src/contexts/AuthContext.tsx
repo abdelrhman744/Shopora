@@ -19,22 +19,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const stored = localStorage.getItem("nexus_user");
-    const token = localStorage.getItem("nexus_token");
+    const stored = localStorage.getItem("shopora_user");
+    const token = localStorage.getItem("shopora_token");
     if (stored && token) {
       try {
         setUser(JSON.parse(stored));
       } catch {
-        localStorage.removeItem("nexus_user");
-        localStorage.removeItem("nexus_token");
+        localStorage.removeItem("shopora_user");
+        localStorage.removeItem("shopora_token");
       }
     }
     setLoading(false);
   }, []);
 
   const persist = (u: User, token: string) => {
-    localStorage.setItem("nexus_token", token);
-    localStorage.setItem("nexus_user", JSON.stringify(u));
+    localStorage.setItem("shopora_token", token);
+    localStorage.setItem("shopora_user", JSON.stringify(u));
     setUser(u);
   };
 
@@ -51,8 +51,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const logout = () => {
-    localStorage.removeItem("nexus_token");
-    localStorage.removeItem("nexus_user");
+    localStorage.removeItem("shopora_token");
+    localStorage.removeItem("shopora_user");
     setUser(null);
   };
 

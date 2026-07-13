@@ -46,7 +46,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <ShieldCheck size={16} className="text-white" />
           </div>
           <span className="text-base font-black text-white">
-            NEXUS<GradientText>.io</GradientText>
+            SHOPORA<GradientText>.io</GradientText>
           </span>
         </Link>
         <nav className="flex-1 space-y-1">

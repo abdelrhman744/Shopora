@@ -23,7 +23,7 @@ export default function Footer() {
                 <Zap size={16} className="text-white" />
               </div>
               <span className="text-lg font-black text-white">
-                NEXUS
+                SHOPORA
                 <GradientText>.io</GradientText>
               </span>
             </div>
@@ -50,7 +50,7 @@ export default function Footer() {
           className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
           style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}
         >
-          <p className="text-xs text-[#8D93A5]">© 2026 NEXUS.io. All rights reserved.</p>
+          <p className="text-xs text-[#8D93A5]">© 2026 SHOPORA.io. All rights reserved.</p>
           <div className="flex gap-6">
             {["Privacy", "Terms", "Cookies"].map((l) => (
               <button key={l} className="text-xs text-[#8D93A5] hover:text-white transition-colors">

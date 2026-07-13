@@ -14,19 +14,19 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem("nexus_wishlist");
+    const stored = localStorage.getItem("shopora_wishlist");
     if (stored) {
       try {
         setWishlist(JSON.parse(stored));
       } catch {
-        localStorage.removeItem("nexus_wishlist");
+        localStorage.removeItem("shopora_wishlist");
       }
     }
     setHydrated(true);
   }, []);
 
   useEffect(() => {
-    if (hydrated) localStorage.setItem("nexus_wishlist", JSON.stringify(wishlist));
+    if (hydrated) localStorage.setItem("shopora_wishlist", JSON.stringify(wishlist));
   }, [wishlist, hydrated]);
 
   const toggleWishlist = (productId: number) => {

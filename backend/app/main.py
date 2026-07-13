@@ -15,7 +15,7 @@ load_dotenv()
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="NEXUS.io E-commerce API", version="1.0.0")
+app = FastAPI(title="SHOPORA E-commerce API", version="1.0.0")
 
 cors_origins = os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
 app.add_middleware(

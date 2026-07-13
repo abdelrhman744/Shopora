@@ -21,7 +21,7 @@ export class ApiError extends Error {
 
 function getToken(): string | null {
   if (typeof window === "undefined") return null;
-  return localStorage.getItem("nexus_token");
+  return localStorage.getItem("shopora_token");
 }
 
 async function request<T>(

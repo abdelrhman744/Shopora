@@ -44,7 +44,7 @@ export default function Navbar() {
           <Zap size={16} className="text-white" />
         </div>
         <span className="text-lg font-black text-white tracking-tight">
-          NEXUS
+          SHOPORA
           <GradientText>.io</GradientText>
         </span>
       </Link>
